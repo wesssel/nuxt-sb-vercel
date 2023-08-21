@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: 'Sequel Sans';
+    src: url('../fonts/SequelSansLightBody.woff2') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'Sequel Sans';
+    src: url('../fonts/SequelSansBookBody.woff2') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'Sequel Sans';
+    src: url('../fonts/SequelSansSemiBoldBody.woff2') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'Atkinson Hyperlegible';
+    src: url('../fonts/AtkinsonHyperlegible-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  /* disable hover on touch devices ( */
+  body.touch *:hover {
+  }
+}
+
+@layer utilities {
+  .underline-offset-1 {
+    text-underline-offset: 20%;
+  }
+
+  .whitespace-break {
+    white-space: break-spaces;
+  }
+
+  .change-transform {
+    will-change: transform;
+  }
+}

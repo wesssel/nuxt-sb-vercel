@@ -1,0 +1,60 @@
+{
+  "redirects": [
+    {
+      "source": "/career",
+      "destination": "https://ngrave.recruitee.com"
+    },
+    {
+      "source": "/support",
+      "destination": "https://support.ngrave.io"
+    },
+    {
+      "source": "/register-batch-1",
+      "destination": "https://register-batch.ngrave.io/"
+    },
+    {
+      "source": "/address-confirmed",
+      "destination": "https://address-confirmed.ngrave.io/"
+    },
+    {
+      "source": "/alliance-zero",
+      "destination": "https://alliance-zero.ngrave.io/"
+    },
+    {
+      "source": "/shipping-update",
+      "destination": "https://shipping-update.ngrave.io/"
+    },
+    {
+      "source": "/review",
+      "destination": "https://review.ngrave.io/"
+    },
+    {
+      "source": "/products/graphene",
+      "destination": "/graphene"
+    },
+    {
+      "source": "/products/zero",
+      "destination": "/zero"
+    },
+    {
+      "source": "/products/liquid",
+      "destination": "/liquid"
+    },
+    {
+      "source": "/firmware",
+      "destination": "/firmware-upgrade"
+    },
+    {
+      "source": "/get-app",
+      "destination": "https://qrco.de/bbo8JT"
+    },
+    {
+      "source": "/shipping",
+      "destination": "https://shipping.ngrave.io/shipping"
+    },
+    {
+      "source": "/shipping:path*",
+      "destination": "https://shipping.ngrave.io/shipping:path*"
+    }
+  ]
+}

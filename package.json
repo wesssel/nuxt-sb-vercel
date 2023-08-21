@@ -1,0 +1,48 @@
+{
+  "name": "ngrave",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "start": "node .output/server/index.mjs",
+    "dev": "cross-env VUE_IS_PREVIEW=true nuxt dev -p 2000",
+    "dev-server": "NODE_OPTIONS=--use-openssl-ca VUE_IS_SSL=true VUE_IS_PREVIEW=true nuxt dev & local-ssl-proxy --source 3010 --target 3000 --cert localhost.pem --key localhost-key.pem",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "prettier": "prettier --check ./",
+    "prettier:fix": "prettier --write ./",
+    "unit:open": "vitest",
+    "unit:run": "vitest run",
+    "cy:open": "cypress open",
+    "cy:run": "cypress run --headless"
+  },
+  "devDependencies": {
+    "@nuxtjs/tailwindcss": "^6.1.3",
+    "@tailwindcss/typography": "0.5.8",
+    "cypress": "^9.5.3",
+    "cypress-file-upload": "^5.0.8",
+    "nuxt": "3",
+    "prettier": "^2.7.1",
+    "prettier-plugin-tailwindcss": "0.2.0"
+  },
+  "dependencies": {
+    "@funken-studio/sitemap-nuxt-3": "^4.0.4",
+    "@mailerlite/mailerlite-nodejs": "^1.0.1",
+    "@storyblok/nuxt": "^4.6.0",
+    "@tailwindcss/forms": "^0.5.3",
+    "@vue/server-renderer": "^3.2.45",
+    "@vue/test-utils": "^2.0.2",
+    "axios": "^0.27.2",
+    "cross-env": "^7.0.3",
+    "gsap": "^3.11.3",
+    "jsdom": "^20.0.0",
+    "lucide-vue-next": "0.103.0",
+    "sass": "^1.57.1",
+    "shopify-buy": "^2.18.0",
+    "sitemap": "^7.1.1",
+    "swiper": "^8.4.3",
+    "typescript": "4.9.3",
+    "vitest": "0.25.3",
+    "vue-social-sharing": "^4.0.0-alpha4"
+  }
+}

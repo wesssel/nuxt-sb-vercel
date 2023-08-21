@@ -1,0 +1,19 @@
+node_modules
+*.log*
+.nuxt
+.nitro
+.cache
+.output
+.env
+dist
+.vercel
+.idea
+
+tests/e2e/screenshots
+tests/e2e/videos
+
+localhost.pem
+localhost-key.pem
+
+# Local Netlify folder
+.netlify
