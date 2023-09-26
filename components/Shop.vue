@@ -69,14 +69,14 @@
             <div
               id="swiper_next"
               @click="swiper.slideNext()"
-              class="cursor-pointer swiper-next absolute top-1/2 right-0 z-20 flex h-14 w-14 -translate-y-1/2 transform items-center justify-center rounded-full p-4 text-black md:right-2 md:hover:bg-white xl:right-20"
+              class="swiper-next absolute top-1/2 right-0 z-20 flex h-14 w-14 -translate-y-1/2 transform cursor-pointer items-center justify-center rounded-full p-4 text-black md:right-2 md:hover:bg-white xl:right-20"
             >
               <IconC id="arrowRight" />
             </div>
             <div
               id="swiper_prev"
               @click="swiper.slidePrev()"
-              class="cursor-pointer swiper-next absolute top-1/2 left-0 z-20 flex h-14 w-14 -translate-y-1/2 transform items-center justify-center rounded-full p-4 text-black md:left-2 md:hover:bg-white xl:left-20"
+              class="swiper-next absolute top-1/2 left-0 z-20 flex h-14 w-14 -translate-y-1/2 transform cursor-pointer items-center justify-center rounded-full p-4 text-black md:left-2 md:hover:bg-white xl:left-20"
             >
               <IconC id="arrowLeft" />
             </div>

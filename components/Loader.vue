@@ -30,7 +30,9 @@ const locale = computed(() => state.value.locale)
 const isHome = computed(
   () => story.value?.full_slug === `${locale.value}/page/`
 )
-const isZero = computed(() => route.params.slug === 'zero' || story.value?.slug === 'zero')
+const isZero = computed(
+  () => route.params.slug === 'zero' || story.value?.slug === 'zero'
+)
 
 // useHead(
 //   isHome.value || isZero.value

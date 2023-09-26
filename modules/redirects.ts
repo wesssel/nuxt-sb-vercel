@@ -34,7 +34,9 @@ export default defineNuxtModule({
   },
   async setup(options, nuxt) {
     const redirects = await getRedirects(options.sbToken)
-    const routeRules = Object.fromEntries(redirects.map((r) => [r.from, { redirect: r.to }]))
+    const routeRules = Object.fromEntries(
+      redirects.map((r) => [r.from, { redirect: r.to }])
+    )
 
     nuxt.options.nitro.routeRules = routeRules
   },

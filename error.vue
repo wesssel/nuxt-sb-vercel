@@ -32,7 +32,6 @@ definePageMeta({
 await actions.loadStory({
   path: 'error-page',
 })
-
 </script>
 
 <style lang="scss">

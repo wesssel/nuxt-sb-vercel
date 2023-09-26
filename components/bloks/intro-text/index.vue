@@ -1,5 +1,5 @@
 <template>
-  <div class="container py-8 text-center pt-40 lg:pt-32 lg:pb-20 ">
+  <div class="container py-8 pt-40 text-center lg:pt-32 lg:pb-20">
     <div class="mx-auto mb-8 w-full sm:mb-20 lg:max-w-3xl">
       <TextC
         v-if="blok.overline"

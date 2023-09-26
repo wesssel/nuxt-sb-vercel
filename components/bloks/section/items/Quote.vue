@@ -31,7 +31,9 @@
             />
           </div>
           <div
-            :class="state.isDark ? 'bg-black text-white' : 'bg-gray-200 text-black'"
+            :class="
+              state.isDark ? 'bg-black text-white' : 'bg-gray-200 text-black'
+            "
             class="relative mr-10 inline-flex -translate-y-20 transform flex-col pt-6 pr-10 lg:mr-0 lg:-translate-y-64 lg:pt-20 lg:pr-44 lg:pl-0"
           >
             <TextC
@@ -111,9 +113,9 @@
 <script lang="ts" setup>
 import { PropType } from 'vue'
 import { ISectionQuote } from '~/types/section'
-import ImageC from '~~/components/ImageC.vue';
-import LinkC from '~~/components/LinkC.vue';
-import TextC from '~~/components/TextC.vue';
+import ImageC from '~~/components/ImageC.vue'
+import LinkC from '~~/components/LinkC.vue'
+import TextC from '~~/components/TextC.vue'
 
 const props = defineProps({
   blok: {

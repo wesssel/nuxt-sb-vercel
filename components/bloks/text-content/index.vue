@@ -1,5 +1,8 @@
 <template>
-  <div class="" :class="{ 'bg-black text-white': state.isDark && !isTransparent }">
+  <div
+    class=""
+    :class="{ 'bg-black text-white': state.isDark && !isTransparent }"
+  >
     <div
       class="break-words pb-20 text-xl leading-normal sm:leading-relaxed lg:px-0 lg:pb-40"
       :class="[

@@ -1,7 +1,9 @@
 <template>
   <i
     v-if="type === 'fa'"
-    :class="`fab ${id} ${state.isDark ? 'text-gray-500' : 'text-gray-600'} text-2xl`"
+    :class="`fab ${id} ${
+      state.isDark ? 'text-gray-500' : 'text-gray-600'
+    } text-2xl`"
   ></i>
   <div v-else-if="type === 'iconMap' && icon" :class="id" v-html="icon"></div>
 </template>

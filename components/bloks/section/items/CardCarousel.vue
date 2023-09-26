@@ -117,12 +117,12 @@
           <div
             @click="swiper.slidePrev()"
             :id="`${blok._uid}cardCarousel-swiper_prev`"
-            class="cardGrid-swiper-prev mr-5 h-8 w-8 p-4 text-white cursor-pointer"
+            class="cardGrid-swiper-prev mr-5 h-8 w-8 cursor-pointer p-4 text-white"
           ></div>
           <div
             @click="swiper.slideNext()"
             :id="`${blok._uid}cardCarousel-swiper_next`"
-            class="cardGrid-swiper-next h-8 w-8 p-4 text-white cursor-pointer"
+            class="cardGrid-swiper-next h-8 w-8 cursor-pointer p-4 text-white"
           ></div>
         </div>
       </div>
@@ -183,7 +183,7 @@ onMounted(async () => {
         spaceBetween: 20,
       },
     },
-  })  
+  })
 })
 </script>
 <style lang="scss" scoped>
@@ -208,7 +208,7 @@ onMounted(async () => {
     background: grey;
     &:hover {
       transition: all 0.3s ease;
-      opacity: .6;
+      opacity: 0.6;
     }
     &:before {
       content: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMSIgaGVpZ2h0PSIxMSIgZmlsbD0id2hpdGUiIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZD0iTTUgM2wzLjA1Ny0zIDExLjk0MyAxMi0xMS45NDMgMTItMy4wNTctMyA5LTl6Ii8+PC9zdmc+');

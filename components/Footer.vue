@@ -1,7 +1,7 @@
 <template>
   <footer
     v-if="settings"
-    :class="state.isDark ? 'bg-black text-white dark' : 'bg-white text-black'"
+    :class="state.isDark ? 'dark bg-black text-white' : 'bg-white text-black'"
     aria-labelledby="footer-heading"
   >
     <h2 id="footer-heading" class="sr-only">Footer</h2>

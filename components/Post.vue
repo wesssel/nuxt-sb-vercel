@@ -387,7 +387,9 @@ const tocItems = computed(() => {
       contentItems.push(...story.text.content)
     })
 
-  const headingItems = contentItems.filter((item) => item.type === 'heading' && item.attrs.level === 2)
+  const headingItems = contentItems.filter(
+    (item) => item.type === 'heading' && item.attrs.level === 2
+  )
   const tocItems = headingItems.map((item, index) => {
     const text = item.content && item.content[0] ? item.content[0].text : ''
 

@@ -35,7 +35,9 @@
       >
         <div :class="!isContentBlock && 'xl:flex xl:items-end'">
           <div :class="!isContentBlock && 'xl:w-0 xl:flex-1'">
-            <h2 class="text-3xl font-extrabold leading-tight tracking-tight newsletter-headline">
+            <h2
+              class="newsletter-headline text-3xl font-extrabold leading-tight tracking-tight"
+            >
               {{ blok.title }}
             </h2>
             <p

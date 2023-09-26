@@ -20,7 +20,7 @@
     <div v-if="isOpen" class="pt-6">
       <TextC
         :text="blok.text"
-        class="break-words text-xl leading-normal sm:leading-relaxed faq-item"
+        class="faq-item break-words text-xl leading-normal sm:leading-relaxed"
         :class="state.isDark ? 'text-gray-500' : 'gray-800'"
       />
 
@@ -28,10 +28,7 @@
         <div v-for="(item, index) in blok.items" :key="index" v-editable="item">
           <div>
             <!-- Button -->
-            <ButtonItem
-              v-if="item.component === 'button-item'"
-              :blok="item"
-            />
+            <ButtonItem v-if="item.component === 'button-item'" :blok="item" />
 
             <!-- Link -->
             <LinkC
