@@ -1,5 +1,5 @@
 <template>
-  <div class="container md:my-24">
+  <div :class="{ 'container md:my-24': isContainerEnabled }">
     <div
       :data-tf-widget="blok.widget_id"
       data-tf-opacity="100"
@@ -27,6 +27,10 @@ const props = defineProps({
       iframe_props: string // like 'title=Test for TakeIt'
     }>,
     required: true,
+  },
+  isContainerEnabled: {
+    type: Boolean as PropType<boolean>,
+    default: true,
   },
 })
 

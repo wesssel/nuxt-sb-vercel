@@ -107,6 +107,9 @@ const textRendered = computed(() => {
       case 'text-content-newsletter': {
         return `<text-content-newsletter :body='${stringify(blok)}'/>`
       }
+      case 'text-content-typeform': {
+        return `<text-content-typeform :body='${stringify(blok)}'/>`
+      }
       default: {
         return ''
       }
