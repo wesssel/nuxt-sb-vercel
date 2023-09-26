@@ -29,6 +29,11 @@
     <!-- Body -->
     <div v-for="(blok, index) in storyBody" :key="i">
       <LazyHydrate :when-visible="true">
+        <FormTypeform
+          v-editable="blok"
+          v-if="blok.component === 'form-typeform'"
+          :blok="blok"
+        />
         <Intro
           v-editable="blok"
           v-if="blok.component === 'intro'"
@@ -123,6 +128,9 @@ const story = state.value.story
 const storyBody = state.value.storyBody
 const intro = story?.content.intro ? story?.content.intro[0] : null
 
+const FormTypeform = defineAsyncComponent(
+  () => import('./bloks/form-typeform/index.vue')
+)
 const Intro = defineAsyncComponent(() => import('./bloks/intro/index.vue'))
 const IntroText = defineAsyncComponent(
   () => import('./bloks/intro-text/index.vue')
